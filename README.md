@@ -103,7 +103,7 @@ This template is increasing the throughput on Base Chain.
 This template is used to increase the gas limit and elasticity or roll back the upgrade (if needed).
 
 1. Ensure you have followed the instructions above in `setup`, including running `make setup-gas-and-elasticity-increase network=<network>` and then go to the folder that was created by this command.
-1. Specify the commit of [Optimism code](https://github.com/ethereum-optimism/optimism) and [Base contracts code](https://github.com/base/contracts), and the new / old gas limit and elasticity, as well the other env vars marked with a TODO, in the `.env` file.
+1. Specify the commit of [Optimism code](https://github.com/ethereum-optimism/optimism) and [Base contracts code](https://github.com/base/contracts), and the new / old gas limit and elasticity, as well as the other env vars marked with a TODO, in the `.env` file.
 1. Run `make deps`.
 1. Ensure only the Sepolia or Mainnet variables are in the `.env` file depending on what network this task is for.
 1. Ensure the `SENDER` variable in the `.env` file is set to a signer of `OWNER_SAFE`.
@@ -111,7 +111,7 @@ This template is used to increase the gas limit and elasticity or roll back the 
 1. Generate the validation file for signers with `make gen-validation`.
 1. Generate the rollback validation file for signers with `make gen-validation-rollback`.
 1. Double check the `cmd` field at the top of both of the generated validation files and ensure that the value passed to the `--sender` flag matches the `SENDER` env var already defined in the `.env` file.
-1. Ensure that all of the fields marked as `TODO` in the tasks's `README.md` have been properly filled out.
+1. Ensure that all of the fields marked as `TODO` in the task's `README.md` have been properly filled out.
 1. Check in the task when it's ready to sign and request the facilitators to collect signatures from signers.
 1. Once executed, check in the records files and mark the task `EXECUTED` in the README.
 
