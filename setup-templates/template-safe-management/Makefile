@@ -1,6 +1,6 @@
 include ../../Makefile
 include ../../Multisig.mk
-include ../.env
+-include ../.env
 include .env
 
 RPC_URL = $(L1_RPC_URL)

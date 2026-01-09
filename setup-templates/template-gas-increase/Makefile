@@ -1,5 +1,5 @@
 include ../../Makefile
-include ../.env
+-include ../.env
 include .env
 
 ifndef LEDGER_ACCOUNT

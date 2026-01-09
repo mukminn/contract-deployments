@@ -1,7 +1,7 @@
 include ../../Makefile
 include ../../Multisig.mk
 
-include ../.env
+-include ../.env
 include .env
 
 ifndef LEDGER_ACCOUNT
